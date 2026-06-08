@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đà Nẵng | VIVU VIỆT NAM</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      text-align: justify;
+    }
+    .destination p,
+    .destination ul,
+    .destination h3 {
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <button class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i> MENU</button>
+    <h1>VIVU VIỆT NAM</h1>
+    <p>Cổng thông tin & hỗ trợ du lịch Việt Nam toàn diện</p>
+    <div class="search-bar">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" id="searchInput" placeholder="Tìm địa điểm..." onkeyup="searchDestinations()" />
+    </div>
+  </header>
+
+  <nav id="mainMenu">
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home"></i> Trang chủ</a></li>
+      <li><a href="khampha.html"><i class="fas fa-map-marked-alt"></i> Khám phá</a></li>
+      <li><a href="lichtrinh.html"><i class="fas fa-route"></i> Lên lịch trình</a></li>
+      <li><a href="chiase.html"><i class="fas fa-comment-dots"></i> Chia sẻ</a></li>
+      <li><a href="lehoi.html"><i class="fas fa-calendar-alt"></i> Lễ hội</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="destination">
+      <h2>Đà Nẵng - Thành phố biển sôi động và thân thiện</h2>
+      <img src="danang.jpg" alt="Đà Nẵng">
+      <p>
+        Đà Nẵng là một trong những điểm đến hàng đầu Việt Nam với bãi biển dài, sạch đẹp và các công trình kiến trúc độc đáo. Thành phố nổi bật với sự phát triển hiện đại, môi trường sống trong lành và sự thân thiện của người dân.
+      </p>
+      <p>
+        Các địa danh nổi bật như Cầu Rồng, Bà Nà Hills, Ngũ Hành Sơn và bãi biển Mỹ Khê là những điểm đến không thể bỏ qua.
+      </p>
+
+      <h3>Bối cảnh lịch sử</h3>
+      <p>
+        Là cửa ngõ giao thương quan trọng của miền Trung từ thế kỷ 17, Đà Nẵng đã trải qua nhiều giai đoạn phát triển từ thương cảng, thuộc địa Pháp đến thành phố du lịch hiện đại như hiện nay. Lịch sử Đà Nẵng gắn liền với nhiều dấu mốc lịch sử quan trọng.
+      </p>
+
+      <div class="gallery">
+        <figure><img src="cau-rong.jpg" alt="Cầu Rồng"><figcaption>Cầu Rồng</figcaption></figure>
+        <figure><img src="ba-na-hills.jpg" alt="Bà Nà Hills"><figcaption>Bà Nà Hills</figcaption></figure>
+        <figure><img src="ngu-hanh-son.jpg" alt="Ngũ Hành Sơn"><figcaption>Ngũ Hành Sơn</figcaption></figure>
+        <figure><img src="bien-my-khe.jpg" alt="Biển Mỹ Khê"><figcaption>Biển Mỹ Khê</figcaption></figure>
+        <figure><img src="am-thuc-da-nang.jpg" alt="Ẩm thực Đà Nẵng"><figcaption>Ẩm thực Đà Nẵng</figcaption></figure>
+      </div>
+
+      <h3>Đặc điểm nổi bật</h3>
+      <ul>
+        <li>Thành phố hiện đại, sạch đẹp</li>
+        <li>Cầu Rồng phun lửa, cầu Tình yêu</li>
+        <li>Ẩm thực ngon, giá cả phải chăng</li>
+        <li>Giao thông thuận tiện, gần Hội An và Huế</li>
+        <li>Hoạt động giải trí biển đa dạng</li>
+      </ul>
+
+      <h3>Gợi ý lịch trình</h3>
+      <p>
+        <strong>Ngày 1:</strong> Biển Mỹ Khê – Cầu Rồng – Bảo tàng Chăm<br>
+        <strong>Ngày 2:</strong> Bà Nà Hills – cầu Vàng – vui chơi Fantasy Park<br>
+        <strong>Ngày 3:</strong> Ngũ Hành Sơn – chợ Hàn – thưởng thức ẩm thực địa phương
+      </p>
+    </div>
+  </main>
+
+  <footer><p>&copy; 2025 - VIVU VIỆT NAM</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

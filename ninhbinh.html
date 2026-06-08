@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ninh Bình | VIVU VIỆT NAM</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      text-align: justify;
+    }
+    .destination p,
+    .destination ul,
+    .destination h3 {
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <button class="menu-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i> MENU
+    </button>
+    <h1>VIVU VIỆT NAM</h1>
+    <p>Cổng thông tin & hỗ trợ du lịch Việt Nam toàn diện</p>
+    <div class="search-bar">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" id="searchInput" placeholder="Tìm địa điểm..." onkeyup="searchDestinations()" />
+    </div>
+  </header>
+
+  <nav id="mainMenu">
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home"></i> Trang chủ</a></li>
+      <li><a href="khampha.html"><i class="fas fa-map-marked-alt"></i> Khám phá</a></li>
+      <li><a href="lichtrinh.html"><i class="fas fa-route"></i> Lên lịch trình</a></li>
+      <li><a href="chiase.html"><i class="fas fa-comment-dots"></i> Chia sẻ</a></li>
+      <li><a href="lehoi.html"><i class="fas fa-calendar-alt"></i> Lễ hội</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="destination">
+      <h2>Ninh Bình</h2>
+      <img src="ninhbinh.jpg" alt="Ninh Bình">
+      <p>
+        Ninh Bình được ví như “Vịnh Hạ Long trên cạn” với cảnh sắc thiên nhiên hùng vĩ, hệ thống núi đá vôi và hang động tuyệt đẹp. Đây là điểm đến du lịch nổi bật miền Bắc với sự kết hợp giữa văn hóa – lịch sử – tâm linh và thiên nhiên hoang sơ.
+      </p>
+      <p>
+        Du khách đến Ninh Bình không chỉ để ngắm cảnh mà còn để tìm hiểu văn hóa cổ xưa qua cố đô Hoa Lư, chùa Bái Đính và những dấu ấn lịch sử hào hùng của dân tộc.
+      </p>
+
+      <h3>Bối cảnh lịch sử</h3>
+      <p>
+        Ninh Bình từng là kinh đô của nước Đại Cồ Việt dưới triều Đinh – Tiền Lê vào thế kỷ X. Khu di tích cố đô Hoa Lư hiện vẫn còn lưu giữ nhiều dấu tích lịch sử quan trọng, góp phần khẳng định vai trò của Ninh Bình trong tiến trình dựng nước và giữ nước.
+      </p>
+
+      <div class="gallery">
+  <figure>
+    <img src="trang-an.jpg" alt="Tràng An">
+    <figcaption>Danh thắng Tràng An</figcaption>
+  </figure>
+  <figure>
+    <img src="tamcoc-bichdong.jpg" alt="Tam Cốc - Bích Động">
+    <figcaption>Tam Cốc - Bích Động</figcaption>
+  </figure>
+  <figure>
+    <img src="chua-bai-dinh.jpg" alt="Chùa Bái Đính">
+    <figcaption>Chùa Bái Đính</figcaption>
+  </figure>
+  <figure>
+    <img src="hangmua.jpg" alt="Hang Múa">
+    <figcaption>Hang Múa</figcaption>
+  </figure>
+  <figure>
+    <img src="co-do-hoa-lu.jpg" alt="Cố đô Hoa Lư">
+    <figcaption>Cố đô Hoa Lư</figcaption>
+  </figure>
+</div>
+
+
+      <h3>Đặc điểm nổi bật</h3>
+      <ul>
+        <li>Quần thể danh thắng Tràng An – Di sản Văn hóa và Thiên nhiên Thế giới</li>
+        <li>Chùa Bái Đính – quần thể chùa lớn nhất Đông Nam Á</li>
+        <li>Hang động, sông nước tuyệt đẹp tại Tam Cốc – Bích Động</li>
+        <li>Cố đô Hoa Lư – di tích lịch sử quan trọng</li>
+        <li>Hang Múa – điểm check-in lý tưởng từ đỉnh núi</li>
+      </ul>
+
+      <h3>Gợi ý lịch trình</h3>
+      <p>
+        <strong>Ngày 1:</strong> Tham quan cố đô Hoa Lư, Hang Múa, ăn tối với dê núi và cơm cháy<br>
+        <strong>Ngày 2:</strong> Khám phá Tràng An bằng thuyền, ghé chùa Bái Đính<br>
+        <strong>Ngày 3:</strong> Tam Cốc – Bích Động, dạo làng quê Ninh Hải, mua đặc sản về làm quà
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - VIVU VIỆT NAM</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

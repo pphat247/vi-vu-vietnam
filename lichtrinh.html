@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <meta charset="UTF-8">
+  <title>Lên lịch trình - VIVU VIỆT NAM</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="lichtrinh.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>VIVU VIỆT NAM</h1>
+    <p class="tagline">Cổng thông tin & hỗ trợ du lịch Việt Nam toàn diện</p>
+    <div class="search-bar">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" id="searchInput" placeholder="Tìm địa điểm..." onkeyup="searchDestinations()" />
+      </div>
+      
+  </header>
+  <nav class="main-nav">
+    <ul class="menu">
+   <li><a href="index.html"><i class="fas fa-home"></i> Trang chủ</a></li>
+      <li><a href="khampha.html"><i class="fas fa-map-marked-alt"></i> Khám phá</a></li>
+      <li><a href="lichtrinh.html"><i class="fas fa-route"></i> Lên lịch trình</a></li>
+      <li><a href="chiase.html"><i class="fas fa-comment-dots"></i> Chia sẻ</a></li>
+      <li><a href="lehoi.html"><i class="fas fa-calendar-alt"></i> Lễ hội</a></li>
+    </ul>
+  
+    </nav>
+  <main>
+    <section>
+      <h2>Tạo lịch trình cá nhân</h2>
+      <p>Chọn điểm đến, thời gian và phong cách du lịch để tạo hành trình phù hợp.</p>
+      <div class="suggestions">
+        <h3>Gợi ý lịch trình phổ biến:</h3>
+        <ul>
+          <li><strong>Miền Bắc 5 ngày:</strong> Hà Nội – Ninh Bình – Hạ Long</li>
+          <li><strong>Miền Trung 4 ngày:</strong> Huế – Đà Nẵng – Hội An</li>
+          <li><strong>Miền Nam 3 ngày:</strong> TP.HCM – Cần Thơ – Châu Đốc</li>
+        </ul>
+      </div>
+      <button onclick="alert('Chức năng đang phát triển')">Tạo lịch trình</button>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 VIVU VIỆT NAM</p>
+  </footer>
+</body>
+</html>

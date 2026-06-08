@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tây Ninh | VIVU VIỆT NAM</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      text-align: justify;
+    }
+    .destination p,
+    .destination ul,
+    .destination h3 {
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <button class="menu-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i> MENU
+    </button>
+    <h1>VIVU VIỆT NAM</h1>
+    <p>Cổng thông tin & hỗ trợ du lịch Việt Nam toàn diện</p>
+    <div class="search-bar">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" id="searchInput" placeholder="Tìm địa điểm..." onkeyup="searchDestinations()" />
+    </div>
+  </header>
+
+  <nav id="mainMenu">
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home"></i> Trang chủ</a></li>
+      <li><a href="khampha.html"><i class="fas fa-map-marked-alt"></i> Khám phá</a></li>
+      <li><a href="lichtrinh.html"><i class="fas fa-route"></i> Lên lịch trình</a></li>
+      <li><a href="chiase.html"><i class="fas fa-comment-dots"></i> Chia sẻ</a></li>
+      <li><a href="lehoi.html"><i class="fas fa-calendar-alt"></i> Lễ hội</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="destination">
+      <h2>Tây Ninh</h2>
+      <img src="tayninh.jpg" alt="Tây Ninh">
+      <p>
+        Tây Ninh là một tỉnh thuộc vùng Đông Nam Bộ, nổi tiếng với núi Bà Đen – ngọn núi cao nhất Nam Bộ, cùng các di tích văn hóa, lịch sử và tôn giáo đặc sắc. Đây là điểm đến kết hợp giữa hành hương, khám phá thiên nhiên và du lịch sinh thái.
+      </p>
+      <p>
+        Vị trí gần TP.HCM giúp Tây Ninh trở thành điểm dã ngoại, hành hương cuối tuần lý tưởng của du khách miền Nam.
+      </p>
+
+      <h3>Bối cảnh lịch sử</h3>
+      <p>
+        Tây Ninh là nơi ra đời và phát triển mạnh mẽ của đạo Cao Đài – một tôn giáo đặc trưng Việt Nam. Vùng đất này cũng từng là căn cứ cách mạng trong kháng chiến chống Pháp và Mỹ, có nhiều di tích lịch sử quan trọng.
+      </p>
+
+      <div class="gallery">
+  <figure><img src="nui-ba-den.jpg" alt="Núi Bà Đen"><figcaption>Núi Bà Đen</figcaption></figure>
+  <figure><img src="toa-thanh-cao-dai.jpg" alt="Tòa Thánh Cao Đài"><figcaption>Tòa Thánh Cao Đài</figcaption></figure>
+  <figure><img src="ho-dau-tien.jpg" alt="Hồ Dầu Tiếng"><figcaption>Hồ Dầu Tiếng</figcaption></figure>
+  <figure><img src="chua-go-ken.jpg" alt="Chùa Gò Kén"><figcaption>Chùa Gò Kén</figcaption></figure>
+  <figure><img src="cap-treo-nui-ba-den.jpg" alt="Cáp treo Núi Bà Đen"><figcaption>Cáp treo Núi Bà Đen</figcaption></figure>
+</div>
+
+
+      <h3>Đặc điểm nổi bật</h3>
+      <ul>
+        <li>Núi Bà Đen cao 986m, có hệ thống cáp treo hiện đại</li>
+        <li>Tòa Thánh Cao Đài – trung tâm đạo Cao Đài độc đáo</li>
+        <li>Hồ Dầu Tiếng rộng lớn, cảnh sắc yên bình</li>
+        <li>Ẩm thực dân dã: bánh tráng phơi sương, muối tôm</li>
+        <li>Lễ hội Núi Bà Đen thu hút hàng nghìn lượt khách hành hương</li>
+      </ul>
+
+      <h3>Gợi ý lịch trình</h3>
+      <p>
+        <strong>Ngày 1:</strong> Tham quan Tòa Thánh Cao Đài, hồ Dầu Tiếng, chùa Gò Kén<br>
+        <strong>Ngày 2:</strong> Leo núi hoặc đi cáp treo Núi Bà Đen, thưởng thức đặc sản Tây Ninh
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - VIVU VIỆT NAM</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

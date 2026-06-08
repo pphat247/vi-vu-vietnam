@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chia sẻ - VIVU VIỆT NAM</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chiase.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Script -->
+  <script defer>
+    function openModal() {
+      document.getElementById('shareModal').style.display = 'block';
+    }
+
+    function closeModal() {
+      document.getElementById('shareModal').style.display = 'none';
+      document.getElementById('imagePreview').innerHTML = '';
+      document.getElementById('imagePreview').classList.add('hidden');
+    }
+
+    function previewImage(event) {
+      const file = event.target.files[0];
+      const preview = document.getElementById('imagePreview');
+      preview.innerHTML = '';
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          preview.innerHTML = `<img src="${e.target.result}" alt="preview">`;
+          preview.classList.remove('hidden');
+        };
+        reader.readAsDataURL(file);
+      }
+    }
+
+    function loadPosts() {
+      const postsContainer = document.getElementById('postsContainer');
+      postsContainer.innerHTML = '';
+      const savedPosts = JSON.parse(localStorage.getItem('vivuPosts') || '[]');
+      savedPosts.reverse().forEach(postData => {
+        const post = document.createElement('div');
+        post.className = 'shared-post';
+
+        if (postData.text) {
+          const textElement = document.createElement('p');
+          textElement.textContent = postData.text;
+          post.appendChild(textElement);
+        }
+
+        if (postData.image) {
+          const img = document.createElement('img');
+          img.src = postData.image;
+          img.alt = "Hình chia sẻ";
+          img.style.maxWidth = '100%';
+          img.style.marginTop = '12px';
+          post.appendChild(img);
+        }
+
+        const timeElement = document.createElement('p');
+        timeElement.textContent = `🕒 ${postData.time || ''}`;
+        timeElement.style.fontSize = '12px';
+        timeElement.style.color = '#888';
+        post.appendChild(timeElement);
+
+        postsContainer.appendChild(post);
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      loadPosts();
+
+      const form = document.getElementById('shareForm');
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const text = document.getElementById('textInput').value.trim();
+        const imageFile = document.getElementById('imageInput').files[0];
+
+        if (!text && !imageFile) {
+          alert('Vui l\u00f2ng nh\u1eadp n\u1ed9i dung ho\u1eb7c t\u1ea3i \u1ea3nh.');
+          return;
+        }
+
+        const postData = { text: text, image: null, time: new Date().toLocaleString('vi-VN') };
+
+        if (imageFile) {
+          const reader = new FileReader();
+          reader.onload = function(e) {
+            postData.image = e.target.result;
+            saveAndRenderPost(postData);
+          };
+          reader.readAsDataURL(imageFile);
+        } else {
+          saveAndRenderPost(postData);
+        }
+
+        alert('C\u1ea3m \u01a1n b\u1ea1n \u0111\u00e3 chia s\u1ebb!');
+        closeModal();
+        form.reset();
+      });
+    });
+
+    function saveAndRenderPost(postData) {
+      const savedPosts = JSON.parse(localStorage.getItem('vivuPosts') || '[]');
+      savedPosts.push(postData);
+      localStorage.setItem('vivuPosts', JSON.stringify(savedPosts));
+      loadPosts();
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>VIVU VIỆT NAM</h1>
+    <p class="tagline">Cổng thông tin & hỗ trợ du lịch Việt Nam toàn diện</p>
+
+    <div class="search-bar">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" id="searchInput" placeholder="Tìm địa điểm..." onkeyup="searchDestinations()" />
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home"></i> Trang chủ</a></li>
+      <li><a href="khampha.html"><i class="fas fa-map-marked-alt"></i> Khám phá</a></li>
+      <li><a href="lichtrinh.html"><i class="fas fa-route"></i> Lên lịch trình</a></li>
+      <li><a href="chiase.html" class="active"><i class="fas fa-comment-dots"></i> Chia sẻ</a></li>
+      <li><a href="lehoi.html"><i class="fas fa-calendar-alt"></i> Lễ hội</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="container">
+      <section class="share-section">
+        <h2>Chia sẻ trải nghiệm</h2>
+        <p>Hãy cùng cộng đồng ViVu chia sẻ những hành trình, hình ảnh và câu chuyện du lịch đáng nhớ của bạn.</p>
+        <button class="share-button" onclick="openModal()">
+          <i class="fas fa-upload"></i> Chia sẻ ngay
+        </button>
+      </section>
+
+      <section class="shared-posts">
+        <h3>Bài chia sẻ gần đây</h3>
+        <div id="postsContainer"></div>
+      </section>
+    </div>
+
+    <div id="shareModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h3><i class="fas fa-pen"></i> Chia sẻ hành trình của bạn</h3>
+
+        <form id="shareForm">
+          <div class="form-group">
+            <label for="textInput">Nội dung:</label>
+            <textarea id="textInput" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="imageInput">Chọn ảnh:</label>
+            <input type="file" id="imageInput" onchange="previewImage(event)">
+            <div id="imagePreview" class="image-preview hidden"></div>
+          </div>
+          <button type="submit">Chia sẻ</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 VIVU VIỆT NAM. Giữ bản quyền nội dung.</p>
+  </footer>
+</body>
+</html>

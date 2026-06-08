@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hà Giang - VIVU VIỆT NAM</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      text-align: justify;
+    }
+    .destination p,
+    .destination ul,
+    .destination h3 {
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <button class="menu-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i> MENU
+    </button>
+    <h1>VIVU VIỆT NAM</h1>
+    <p>Cổng thông tin & hỗ trợ du lịch Việt Nam toàn diện</p>
+
+    <div class="search-bar">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" id="searchInput" placeholder="Tìm địa điểm..." onkeyup="searchDestinations()" />
+    </div>
+  </header>
+
+  <nav id="mainMenu">
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home"></i> Trang chủ</a></li>
+      <li><a href="khampha.html"><i class="fas fa-map-marked-alt"></i> Khám phá</a></li>
+      <li><a href="lichtrinh.html"><i class="fas fa-route"></i> Lên lịch trình</a></li>
+      <li><a href="chiase.html"><i class="fas fa-comment-dots"></i> Chia sẻ</a></li>
+      <li><a href="lehoi.html"><i class="fas fa-calendar-alt"></i> Lễ hội</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="destination">
+      <h2>Hà Giang - Cực Bắc Tổ quốc</h2>
+      <img src="ha-giang.jpg" alt="Hà Giang" />
+      <p>
+        Hà Giang là vùng đất địa đầu Tổ quốc, nổi bật với cao nguyên đá Đồng Văn kỳ vĩ, những con đèo hiểm trở như Mã Pì Lèng, và cột cờ Lũng Cú thiêng liêng – nơi đặt nét cờ đầu tiên trên bản đồ Việt Nam. Nơi đây quyến rũ không chỉ bởi cảnh sắc thiên nhiên hùng vĩ mà còn bởi nét đẹp văn hóa độc đáo của các dân tộc thiểu số.
+      </p>
+      <p>
+        Du khách đến Hà Giang sẽ được đắm mình trong bầu không khí nguyên sơ, mát lành; trải nghiệm chợ phiên vùng cao, những cung đường phượt huyền thoại, cùng nền ẩm thực đặc trưng miền núi phía Bắc.
+      </p>
+
+      <h3>Bối cảnh lịch sử</h3>
+      <p>
+        Hà Giang có lịch sử lâu đời, từng là vùng biên cương quan trọng từ thời Hùng Vương đến thời phong kiến và hiện đại. Trải qua các thời kỳ chống Pháp, chống Mỹ, người dân nơi đây vẫn kiên trung bảo vệ từng tấc đất biên cương. Ngày nay, Hà Giang không chỉ là điểm đến du lịch hấp dẫn mà còn là biểu tượng cho tinh thần kiên cường và lòng yêu nước.
+      </p>
+
+      <div class="gallery">
+        <figure>
+          <img src="cao-nguyen-da-dong-van.jpg" alt="Cao nguyên đá Đồng Văn">
+          <figcaption>Cao nguyên đá Đồng Văn</figcaption>
+        </figure>
+        <figure>
+          <img src="deo-ma-pi-leng.jpg" alt="Đèo Mã Pì Lèng">
+          <figcaption>Đèo Mã Pì Lèng</figcaption>
+        </figure>
+        <figure>
+          <img src="cot-co-lung-cu.jpg" alt="Cột cờ Lũng Cú">
+          <figcaption>Cột cờ Lũng Cú</figcaption>
+        </figure>
+        <figure>
+          <img src="pho-co-dong-van.jpg" alt="Phố cổ Đồng Văn">
+          <figcaption>Phố cổ Đồng Văn</figcaption>
+        </figure>
+        <figure>
+          <img src="cho-phien-ha-giang.jpg" alt="Chợ phiên Hà Giang">
+          <figcaption>Chợ phiên vùng cao</figcaption>
+        </figure>
+      </div>
+
+      <h3>Đặc điểm nổi bật</h3>
+      <ul>
+        <li>Cao nguyên đá Đồng Văn – di sản địa chất toàn cầu</li>
+        <li>Đèo Mã Pì Lèng – một trong "tứ đại đỉnh đèo" của Việt Nam</li>
+        <li>Cột cờ Lũng Cú – điểm cực Bắc thiêng liêng</li>
+        <li>Chợ phiên vùng cao mang đậm bản sắc văn hóa dân tộc</li>
+        <li>Phố cổ Đồng Văn – không gian kiến trúc cổ kính giữa núi rừng</li>
+        <li>Lễ hội hoa tam giác mạch mỗi mùa thu</li>
+        <li>Ẩm thực độc đáo: thắng cố, bánh tam giác mạch, mèn mén</li>
+      </ul>
+
+      <h3>Gợi ý lịch trình</h3>
+      <p>
+        <strong>Ngày 1:</strong> Khởi hành từ Hà Nội – đến TP. Hà Giang – nghỉ ngơi<br>
+        <strong>Ngày 2:</strong> Hà Giang – Quản Bạ – Yên Minh – Đồng Văn<br>
+        <strong>Ngày 3:</strong> Đồng Văn – Cột cờ Lũng Cú – Đèo Mã Pì Lèng – Mèo Vạc<br>
+        <strong>Ngày 4:</strong> Trải nghiệm chợ phiên – quay về Hà Giang – Hà Nội
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - VIVU VIỆT NAM</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Lễ hội - VIVU VIỆT NAM</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>VIVU VIỆT NAM</h1>
+    <p class="tagline">Cổng thông tin & hỗ trợ du lịch Việt Nam toàn diện</p>
+    <div class="search-bar">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" id="searchInput" placeholder="Tìm địa điểm..." onkeyup="searchDestinations()" />
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home"></i> Trang chủ</a></li>
+      <li><a href="khampha.html"><i class="fas fa-map-marked-alt"></i> Khám phá</a></li>
+      <li><a href="lichtrinh.html"><i class="fas fa-route"></i> Lên lịch trình</a></li>
+      <li><a href="chiase.html"><i class="fas fa-comment-dots"></i> Chia sẻ</a></li>
+      <li><a href="lehoi.html"><i class="fas fa-calendar-alt"></i> Lễ hội</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2><i class="fas fa-calendar-check"></i> Giới thiệu lễ hội Việt Nam</h2>
+    <p>Việt Nam có hàng ngàn lễ hội lớn nhỏ, phản ánh nét văn hóa đặc sắc và đời sống tinh thần phong phú của từng vùng miền. Mỗi lễ hội là dịp để người dân tưởng nhớ tổ tiên, tôn vinh anh hùng dân tộc và cầu mong mùa màng bội thu.</p>
+
+    <section class="festival-filters">
+      <h2><i class="fas fa-filter"></i> Lọc lễ hội theo vùng miền</h2>
+      <div class="button-group">
+        <button onclick="filterRegion('all')">Tất cả</button>
+        <button onclick="filterRegion('mienbac')">Miền Bắc</button>
+        <button onclick="filterRegion('mientrung')">Miền Trung</button>
+        <button onclick="filterRegion('miennam')">Miền Nam</button>
+      </div>
+    </section>
+
+    <section id="festival-list">
+      <div class="festival-item mienbac">
+        <h3><i class="fas fa-landmark"></i> Lễ hội Đền Hùng</h3>
+        <p>Phú Thọ - 10/3 âm lịch</p>
+      </div>
+      <div class="festival-item mienbac">
+        <h3><i class="fas fa-drum"></i> Lễ hội Gióng</h3>
+        <p>Hà Nội - mùng 6 tháng Giêng</p>
+      </div>
+      <div class="festival-item mientrung">
+        <h3><i class="fas fa-water"></i> Lễ hội Cầu Ngư</h3>
+        <p>Huế - tháng 2 âm lịch</p>
+      </div>
+      <div class="festival-item miennam">
+        <h3><i class="fas fa-mug-hot"></i> Lễ hội Cà phê</h3>
+        <p>Buôn Ma Thuột - tháng 3 dương lịch</p>
+      </div>
+    </section>
+
+    <section class="festival-by-region">
+      <h2><i class="fas fa-map"></i> Lễ hội theo vùng miền</h2>
+      <div class="region">
+        <h3>Miền Bắc</h3>
+        <ul>
+          <li>Lễ hội Gióng – Hà Nội</li>
+          <li>Lễ hội Đền Hùng – Phú Thọ</li>
+          <li>Lễ hội Lim – Bắc Ninh</li>
+        </ul>
+      </div>
+      <div class="region">
+        <h3>Miền Trung</h3>
+        <ul>
+          <li>Lễ hội Cầu Ngư – Huế</li>
+          <li>Lễ hội Đền Trần – Nghệ An</li>
+        </ul>
+      </div>
+      <div class="region">
+        <h3>Miền Nam</h3>
+        <ul>
+          <li>Lễ hội Cà phê – Buôn Ma Thuột</li>
+          <li>Lễ hội Đua ghe ngo – Sóc Trăng</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="festival-calendar">
+      <h2><i class="fas fa-calendar"></i> Lịch tổ chức lễ hội nổi bật</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Tên lễ hội</th>
+            <th>Địa điểm</th>
+            <th>Thời gian</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lễ hội Chùa Hương</td>
+            <td>Hà Nội</td>
+            <td>Tháng Giêng âm lịch</td>
+          </tr>
+          <tr>
+            <td>Lễ hội Đền Hùng</td>
+            <td>Phú Thọ</td>
+            <td>10/3 âm lịch</td>
+          </tr>
+          <tr>
+            <td>Lễ hội Cà phê</td>
+            <td>Buôn Ma Thuột</td>
+            <td>Tháng 3 dương lịch</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2><i class="fas fa-star"></i> Lễ hội đặc sắc</h2>
+      <p>Tìm hiểu các lễ hội truyền thống trên khắp Việt Nam.</p>
+      <ul>
+        <li>Lễ hội Chùa Hương - Hà Nội</li>
+        <li>Lễ hội Đền Hùng - Phú Thọ</li>
+        <li>Lễ hội Cà phê - Buôn Ma Thuột</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 VIVU VIỆT NAM</p>
+  </footer>
+</body>
+</html>

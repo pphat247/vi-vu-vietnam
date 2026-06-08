@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đà Lạt - Lâm Đồng | VIVU VIỆT NAM</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      text-align: justify;
+    }
+    .destination p,
+    .destination ul,
+    .destination h3 {
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <button class="menu-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i> MENU
+    </button>
+    <h1>VIVU VIỆT NAM</h1>
+    <p>Cổng thông tin & hỗ trợ du lịch Việt Nam toàn diện</p>
+    <div class="search-bar">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" id="searchInput" placeholder="Tìm địa điểm..." onkeyup="searchDestinations()" />
+    </div>
+  </header>
+
+  <nav id="mainMenu">
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home"></i> Trang chủ</a></li>
+      <li><a href="khampha.html"><i class="fas fa-map-marked-alt"></i> Khám phá</a></li>
+      <li><a href="lichtrinh.html"><i class="fas fa-route"></i> Lên lịch trình</a></li>
+      <li><a href="chiase.html"><i class="fas fa-comment-dots"></i> Chia sẻ</a></li>
+      <li><a href="lehoi.html"><i class="fas fa-calendar-alt"></i> Lễ hội</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="destination">
+      <h2>Đà Lạt - Lâm Đồng</h2>
+      <img src="da-lat.jpg" alt="Đà Lạt">
+      <p>
+        Đà Lạt được mệnh danh là "Thành phố ngàn hoa", là điểm đến lý tưởng cho những ai yêu thiên nhiên, thích không khí mát mẻ quanh năm và muốn tìm kiếm sự bình yên giữa cao nguyên lộng gió.
+      </p>
+      <p>
+        Với những thung lũng thơ mộng, hồ nước trong xanh, rừng thông bạt ngàn và kiến trúc Pháp cổ kính, Đà Lạt luôn nằm trong top những thành phố đáng sống và du lịch nhất Việt Nam.
+      </p>
+
+      <h3>Bối cảnh lịch sử</h3>
+      <p>
+        Đà Lạt được người Pháp khai phá từ cuối thế kỷ 19 với mục tiêu phát triển thành khu nghỉ dưỡng trên cao nguyên Lâm Viên. Kể từ đó, nơi đây dần trở thành trung tâm du lịch và giáo dục quan trọng ở miền Nam, mang đậm dấu ấn kiến trúc và quy hoạch đô thị kiểu Pháp.
+      </p>
+
+      <div class="gallery">
+        <img src="ho-xuan-huong.jpg" alt="Hồ Xuân Hương">
+        <img src="thung-lung-tinh-yeu.jpg" alt="Thung lũng Tình Yêu">
+        <img src="vuon-hoa-thanh-pho.jpg" alt="Vườn hoa thành phố">
+        <img src="nha-tho-con-ga.jpg" alt="Nhà thờ Con Gà">
+        <img src="rung-thong-da-lat.jpg" alt="Rừng thông Đà Lạt">
+      </div>
+
+      <h3>Đặc điểm nổi bật</h3>
+      <ul>
+        <li>Khí hậu mát mẻ quanh năm, nhiều sương mù và nắng nhẹ</li>
+        <li>Thiên nhiên đẹp: Hồ Xuân Hương, Thung lũng Tình Yêu, Đồi chè Cầu Đất</li>
+        <li>Ẩm thực hấp dẫn: bánh căn, lẩu gà lá é, kem bơ</li>
+        <li>Nhiều homestay, biệt thự nghỉ dưỡng mang phong cách châu Âu</li>
+        <li>Các lễ hội hoa, cà phê, và âm nhạc đường phố</li>
+      </ul>
+
+      <h3>Gợi ý lịch trình</h3>
+      <p>
+        <strong>Ngày 1:</strong> Tham quan Vườn hoa thành phố, Hồ Xuân Hương, Dinh Bảo Đại<br>
+        <strong>Ngày 2:</strong> Khám phá Đồi chè Cầu Đất, Thác Datanla, ga Đà Lạt cổ<br>
+        <strong>Ngày 3:</strong> Dạo chợ Đà Lạt, thưởng thức ẩm thực địa phương, mua quà lưu niệm
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - VIVU VIỆT NAM</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

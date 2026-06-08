@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cao Bằng | VIVU VIỆT NAM</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      text-align: justify;
+    }
+    .destination p,
+    .destination ul,
+    .destination h3 {
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <button class="menu-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i> MENU
+    </button>
+    <h1>VIVU VIỆT NAM</h1>
+    <p>Cổng thông tin & hỗ trợ du lịch Việt Nam toàn diện</p>
+    <div class="search-bar">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" id="searchInput" placeholder="Tìm địa điểm..." onkeyup="searchDestinations()" />
+    </div>
+  </header>
+
+  <nav id="mainMenu">
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home"></i> Trang chủ</a></li>
+      <li><a href="khampha.html"><i class="fas fa-map-marked-alt"></i> Khám phá</a></li>
+      <li><a href="lichtrinh.html"><i class="fas fa-route"></i> Lên lịch trình</a></li>
+      <li><a href="chiase.html"><i class="fas fa-comment-dots"></i> Chia sẻ</a></li>
+      <li><a href="lehoi.html"><i class="fas fa-calendar-alt"></i> Lễ hội</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="destination">
+      <h2>Cao Bằng</h2>
+      <img src="caobang.jpg" alt="Cao Bằng">
+      <p>
+        Cao Bằng là tỉnh miền núi phía Bắc Việt Nam, nổi bật với cảnh quan thiên nhiên kỳ vĩ và di tích lịch sử quan trọng gắn liền với cách mạng Việt Nam.
+      </p>
+      <p>
+        Tỉnh có nhiều địa điểm du lịch nổi bật như Thác Bản Giốc – một trong những thác nước đẹp nhất Đông Nam Á, động Ngườm Ngao, hồ Thang Hen và các bản làng dân tộc thiểu số mang đậm bản sắc văn hóa.
+      </p>
+
+      <h3>Bối cảnh lịch sử</h3>
+      <p>
+        Cao Bằng là nơi Chủ tịch Hồ Chí Minh trở về sau nhiều năm bôn ba nước ngoài để lãnh đạo cách mạng. Nơi đây có khu di tích Pác Bó, nơi Bác từng sống và làm việc trong thời kỳ đầu của cuộc kháng chiến chống Pháp.
+      </p>
+
+      <div class="gallery">
+  <figure>
+    <img src="thac-ban-gioc.jpg" alt="Thác Bản Giốc">
+    <figcaption>Thác Bản Giốc</figcaption>
+  </figure>
+  <figure>
+    <img src="dong-nguom-ngao.jpg" alt="Động Ngườm Ngao">
+    <figcaption>Động Ngườm Ngao</figcaption>
+  </figure>
+  <figure>
+    <img src="di-tich-pac-bo.jpg" alt="Di tích Pác Bó">
+    <figcaption>Di tích Pác Bó</figcaption>
+  </figure>
+  <figure>
+    <img src="nui-mat-than.jpg" alt="Núi Mắt Thần (Thủng)">
+    <figcaption>Núi Mắt Thần (Thủng)</figcaption>
+  </figure>
+  <figure>
+    <img src="am-thuc-cao-bang.jpg" alt="Ẩm thực Cao Bằng">
+    <figcaption>Ẩm thực Cao Bằng</figcaption>
+  </figure>
+</div>
+
+
+      <h3>Đặc điểm nổi bật</h3>
+      <ul>
+        <li>Phong cảnh thiên nhiên núi non hùng vĩ, hoang sơ</li>
+        <li>Nhiều điểm đến lịch sử gắn liền với Chủ tịch Hồ Chí Minh</li>
+        <li>Ẩm thực địa phương phong phú: phở chua, bánh áp chao, lạp sườn</li>
+        <li>Văn hóa đa dạng của các dân tộc Tày, Nùng, Dao, H'Mông</li>
+        <li>Lễ hội truyền thống độc đáo như hội Lồng Tồng, hội Xuân</li>
+      </ul>
+
+      <h3>Gợi ý lịch trình</h3>
+      <p>
+        <strong>Ngày 1:</strong> Tham quan Thác Bản Giốc, Động Ngườm Ngao<br>
+        <strong>Ngày 2:</strong> Ghé thăm khu di tích Pác Bó, suối Lê Nin, núi Các Mác<br>
+        <strong>Ngày 3:</strong> Trải nghiệm văn hóa bản địa, chợ vùng cao và ẩm thực dân tộc
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - VIVU VIỆT NAM</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

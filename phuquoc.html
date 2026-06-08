@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phú Quốc | VIVU VIỆT NAM</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      text-align: justify;
+    }
+    .destination p,
+    .destination ul,
+    .destination h3 {
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <button class="menu-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i> MENU
+    </button>
+    <h1>VIVU VIỆT NAM</h1>
+    <p>Cổng thông tin & hỗ trợ du lịch Việt Nam toàn diện</p>
+    <div class="search-bar">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" id="searchInput" placeholder="Tìm địa điểm..." onkeyup="searchDestinations()" />
+    </div>
+  </header>
+
+  <nav id="mainMenu">
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home"></i> Trang chủ</a></li>
+      <li><a href="khampha.html"><i class="fas fa-map-marked-alt"></i> Khám phá</a></li>
+      <li><a href="lichtrinh.html"><i class="fas fa-route"></i> Lên lịch trình</a></li>
+      <li><a href="chiase.html"><i class="fas fa-comment-dots"></i> Chia sẻ</a></li>
+      <li><a href="lehoi.html"><i class="fas fa-calendar-alt"></i> Lễ hội</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="destination">
+      <h2>Phú Quốc</h2>
+      <img src="phuquoc.jpg" alt="Phú Quốc">
+      <p>
+        Phú Quốc, hòn đảo lớn nhất Việt Nam, nằm trong vịnh Thái Lan và nổi tiếng với làn nước biển trong xanh, bãi cát trắng mịn cùng hệ sinh thái rừng nguyên sinh đa dạng. Đây là điểm đến lý tưởng cho nghỉ dưỡng và khám phá biển đảo.
+      </p>
+      <p>
+        Ngoài thiên nhiên tuyệt đẹp, Phú Quốc còn hấp dẫn du khách bởi những khu nghỉ dưỡng sang trọng, các hoạt động thể thao dưới nước, và văn hóa địa phương phong phú.
+      </p>
+
+      <h3>Bối cảnh lịch sử</h3>
+      <p>
+        Phú Quốc từng là vùng đất hoang sơ được cư dân người Khmer và người Việt khai phá từ thế kỷ XVII. Trong lịch sử hiện đại, đảo còn là nơi giam giữ tù binh thời chiến tranh với nhà tù Phú Quốc nổi tiếng – nay là một di tích lịch sử quan trọng.
+      </p>
+
+      <div class="gallery">
+  <figure>
+    <img src="bai-sao.jpg" alt="Bãi Sao">
+    <figcaption>Bãi Sao</figcaption>
+  </figure>
+  <figure>
+    <img src="vinwonders.jpg" alt="VinWonders Phú Quốc">
+    <figcaption>VinWonders Phú Quốc</figcaption>
+  </figure>
+  <figure>
+    <img src="cho-dem-phu-quoc.jpg" alt="Chợ đêm Phú Quốc">
+    <figcaption>Chợ đêm Phú Quốc</figcaption>
+  </figure>
+  <figure>
+    <img src="cap-treo-hon-thom.jpg" alt="Cáp treo Hòn Thơm">
+    <figcaption>Cáp treo Hòn Thơm</figcaption>
+  </figure>
+  <figure>
+    <img src="lan-ngam-san-ho.jpg" alt="Lặn ngắm san hô ở Nam đảo">
+    <figcaption>Lặn ngắm san hô ở Nam đảo</figcaption>
+  </figure>
+</div>
+
+
+      <h3>Đặc điểm nổi bật</h3>
+      <ul>
+        <li>Bãi biển đẹp: Bãi Sao, Bãi Dài, Bãi Khem</li>
+        <li>Rừng nguyên sinh, suối Tranh, suối Đá Bàn</li>
+        <li>Khu vui chơi VinWonders, Safari, Grand World</li>
+        <li>Ẩm thực hải sản phong phú: nhum biển, gỏi cá trích</li>
+        <li>Di tích lịch sử: Nhà tù Phú Quốc, Dinh Cậu</li>
+      </ul>
+
+      <h3>Gợi ý lịch trình</h3>
+      <p>
+        <strong>Ngày 1:</strong> Tắm biển Bãi Sao, tham quan Dinh Cậu, chợ đêm Phú Quốc<br>
+        <strong>Ngày 2:</strong> Tham quan Safari, VinWonders, Sunset Sanato<br>
+        <strong>Ngày 3:</strong> Tham quan nhà tù Phú Quốc, đi cáp treo Hòn Thơm, thưởng thức hải sản
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - VIVU VIỆT NAM</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

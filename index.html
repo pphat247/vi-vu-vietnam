@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VIVU VIỆT NAM 
+    – Cổng thông tin du lịch toàn diện</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script>
+function searchDestinations() {
+  const input = document.getElementById('searchInput');
+  const filter = input.value.toLowerCase();
+  const cards = document.querySelectorAll('.destination-card');
+
+  cards.forEach(card => {
+    const title = card.querySelector('h2').textContent.toLowerCase();
+    const description = card.querySelector('p').textContent.toLowerCase();
+
+    if (title.includes(filter) || description.includes(filter)) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+</script>
+
+</head>
+<body>
+  
+
+  <header>
+    <button class="menu-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i> MENU
+    </button>
+    <h1>VIVU VIỆT NAM</h1>
+    <p>Cổng thông tin & hỗ trợ du lịch Việt Nam toàn diện</p>
+
+    <!-- Thanh tìm kiếm -->
+    <div class="search-bar">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" id="searchInput" placeholder="Tìm địa điểm..." onkeyup="searchDestinations()" />
+    </div>
+  </header>
+
+  <nav id="mainMenu">
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home"></i> Trang chủ</a></li>
+      <li><a href="khampha.html"><i class="fas fa-map-marked-alt"></i> Khám phá</a></li>
+      <li><a href="lichtrinh.html"><i class="fas fa-route"></i> Lên lịch trình</a></li>
+      <li><a href="chiase.html"><i class="fas fa-comment-dots"></i> Chia sẻ</a></li>
+      <li><a href="lehoi.html"><i class="fas fa-calendar-alt"></i> Lễ hội</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="destination-card">
+  <a href="hanoi.html">
+    <h2>Hà Nội</h2>
+    <img src="hanoi.jpg" alt="Hà Nội về đêm">
+    <p>Hà Nội là thủ đô nghìn năm văn hiến, nổi bật với Hồ Gươm, 36 phố phường và nhiều di tích lịch sử.</p>
+  </a>
+</div>
+
+<div class="destination-card">
+  <a href="TPHCM.html">
+    <h2>TP. Hồ Chí Minh</h2>
+    <img src="tphcm.jpg" alt="TP. Hồ Chí Minh hiện đại">
+    <p>TP. Hồ Chí Minh là trung tâm kinh tế sôi động với chợ Bến Thành, nhà thờ Đức Bà và phố đi bộ Nguyễn Huệ.</p>
+  </a>
+</div>
+
+<div class="destination-card">
+  <a href="danang.html">
+    <h2>Đà Nẵng</h2>
+    <img src="danang.jpg" alt="Cầu Rồng Đà Nẵng">
+    <p>Đà Nẵng nổi tiếng với Cầu Rồng, biển Mỹ Khê và là cửa ngõ tới Bà Nà Hills, Hội An, Mỹ Sơn.</p>
+  </a>
+</div>
+<div class="destination-card">
+  <a href="ninhbinh.html">
+    <h2>Ninh Bình</h2>
+    <img src="ninhbinh.jpg" alt="Danh thắng Tràng An - Ninh Bình">
+    <p>Ninh Bình nổi bật với Tràng An, Tam Cốc - Bích Động, cố đô Hoa Lư và chùa Bái Đính linh thiêng.</p>
+  </a>
+</div>
+
+<div class="destination-card">
+  <a href="phuquoc.html">
+    <h2>Phú Quốc</h2>
+    <img src="phuquoc.jpg" alt="Đảo ngọc Phú Quốc">
+    <p>Phú Quốc là thiên đường biển đảo với làn nước trong xanh, bãi cát trắng mịn và nhiều resort cao cấp.</p>
+  </a>
+</div>
+
+<div class="destination-card">
+  <a href="nha-trang.html">
+    <h2>Nha Trang - Khánh Hòa</h2>
+    <img src="nhatrang.jpg" alt="Thành phố biển Nha Trang">
+    <p>Nha Trang nổi tiếng với bãi biển dài, tháp Bà Ponagar, VinWonders và các hoạt động lặn biển.</p>
+  </a>
+</div>
+
+<div class="destination-card">
+  <a href="hue.html">
+    <h2>Huế</h2>
+    <img src="hue-thua thien hue.jpg" alt="Cố đô Huế">
+    <p>Huế là cố đô cổ kính với Đại Nội, lăng tẩm triều Nguyễn và dòng sông Hương thơ mộng.</p>
+  </a>
+</div>
+
+<div class="destination-card">
+  <a href="mui-ne.html">
+    <h2>Mũi Né - Bình Thuận</h2>
+    <img src="muine.jpg" alt="Mũi Né - Thiên đường nắng gió">
+    <p>Mũi Né thu hút với đồi cát bay, biển xanh, làng chài và thể thao biển hấp dẫn.</p>
+  </a>
+</div>
+
+<div class="destination-card">
+  <a href="tayninh.html">
+    <h2>Tây Ninh</h2>
+    <img src="tayninh.jpg" alt="Núi Bà Đen Tây Ninh">
+    <p>Tây Ninh có núi Bà Đen - nóc nhà Nam Bộ, tòa thánh Cao Đài và cáp treo độc đáo.</p>
+  </a>
+</div>
+
+<div class="destination-card">
+  <a href="caobang.html">
+    <h2>Cao Bằng</h2>
+    <img src="caobang.jpg" alt="Thác Bản Giốc - Cao Bằng">
+    <p>Cao Bằng nổi tiếng với thác Bản Giốc, động Ngườm Ngao và núi non hùng vĩ.</p>
+  </a>
+</div>
+
+<div class="destination-card">
+  <a href="kontum.html">
+    <h2>Kon Tum</h2>
+    <img src="kontum.jpg" alt="Nhà rông Kon Tum">
+    <p>Kon Tum mang đậm bản sắc Tây Nguyên với nhà rông, nhà thờ gỗ và không gian văn hóa cồng chiêng.</p>
+  </a>
+</div>
+
+  <div class="destination-card">
+  <a href="hoian.html">
+    <h2>Hội An - Quảng Nam</h2>
+    <img src="hoi-an.jpg" alt="Hội An" />
+    <p>Hội An là phố cổ nổi tiếng với những ngôi nhà mái ngói vàng và lồng đèn đầy sắc màu.</p>
+  </a>
+</div>
+
+<div class="destination-card">
+  <a href="dalat.html">
+    <h2>Đà Lạt - Lâm Đồng</h2>
+    <img src="da-lat.jpg" alt="Đà Lạt" />
+    <p>Thành phố sương mù với khí hậu mát mẻ quanh năm, nổi tiếng với rừng thông và trang trại hoa.</p>
+  </a>
+</div>
+
+<div class="destination-card">
+  <a href="sapa.html">
+    <h2>Sa Pa - Lào Cai</h2>
+    <img src="sapa.jpg" alt="Sa Pa" />
+    <p>Thiên đường khám phá thiên nhiên và văn hóa dân tộc miền núi Tây Bắc.</p>
+  </a>
+</div>
+
+<div class="destination-card">
+  <a href="halong.html">
+    <h2>Vịnh Hạ Long - Quảng Ninh</h2>
+    <img src="ha-long.jpg" alt="Vịnh Hạ Long" />
+    <p>Di sản thiên nhiên thế giới với hàng nghìn đảo đá vôi và hang động kỳ vĩ.</p>
+  </a>
+</div>
+
+<div class="destination-card">
+  <a href="cantho.html">
+    <h2>Cần Thơ - Miền Tây sông nước</h2>
+    <img src="can-tho.jng.png" alt="Cần Thơ" />
+    <p>Chợ nổi Cái Răng và văn hóa sông nước đặc trưng miền Tây Nam Bộ.</p>
+  </a>
+</div>
+
+<div class="destination-card">
+  <a href="hagiang.html">
+    <h2>Hà Giang - Cực Bắc Tổ quốc</h2>
+    <img src="ha-giang.jpg" alt="Hà Giang" />
+    <p>Vùng đất hùng vĩ với cao nguyên đá Đồng Văn, cột cờ Lũng Cú và những cung đường đèo ấn tượng.</p>
+  </a>
+</div>
+
+<footer class="site-footer">
+  <p>&copy; 2025 VIVU VIỆT NAM</p>
+</footer>
+

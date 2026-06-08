@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sa Pa - Lào Cai | VIVU VIỆT NAM</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      text-align: justify;
+    }
+    .destination p,
+    .destination ul,
+    .destination h3 {
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <button class="menu-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i> MENU
+    </button>
+    <h1>VIVU VIỆT NAM</h1>
+    <p>Cổng thông tin & hỗ trợ du lịch Việt Nam toàn diện</p>
+    <div class="search-bar">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" id="searchInput" placeholder="Tìm địa điểm..." onkeyup="searchDestinations()" />
+    </div>
+  </header>
+
+  <nav id="mainMenu">
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home"></i> Trang chủ</a></li>
+      <li><a href="khampha.html"><i class="fas fa-map-marked-alt"></i> Khám phá</a></li>
+      <li><a href="lichtrinh.html"><i class="fas fa-route"></i> Lên lịch trình</a></li>
+      <li><a href="chiase.html"><i class="fas fa-comment-dots"></i> Chia sẻ</a></li>
+      <li><a href="lehoi.html"><i class="fas fa-calendar-alt"></i> Lễ hội</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="destination">
+      <h2>Sa Pa - Lào Cai</h2>
+      <img src="sapa.jpg" alt="Sa Pa">
+      <p>
+        Sa Pa là một thị trấn vùng cao thuộc tỉnh Lào Cai, nổi bật với khí hậu mát mẻ quanh năm, phong cảnh núi non hùng vĩ, và những thửa ruộng bậc thang trải dài bất tận. Là điểm đến lý tưởng cho những ai yêu thiên nhiên, khám phá văn hóa dân tộc và trải nghiệm cuộc sống miền núi phía Bắc.
+      </p>
+      <p>
+        Sa Pa không chỉ thu hút bởi vẻ đẹp hùng vĩ của Fansipan - nóc nhà Đông Dương, mà còn bởi sự đa dạng văn hóa của các dân tộc H'Mông, Dao, Tày, Giáy... với các lễ hội đặc sắc, trang phục truyền thống rực rỡ và lối sống mộc mạc gần gũi.
+      </p>
+
+      <h3>Bối cảnh lịch sử</h3>
+      <p>
+        Sa Pa được người Pháp phát hiện và xây dựng thành khu nghỉ dưỡng từ đầu thế kỷ 20. Nhờ khí hậu mát mẻ và địa hình lý tưởng, nơi đây từng là điểm nghỉ dưỡng mùa hè của các quan chức Pháp. Dấu ấn kiến trúc Pháp còn tồn tại trong các biệt thự cổ, nhà thờ đá và quy hoạch thị trấn.
+      </p>
+
+      <div class="gallery">
+  <figure>
+    <img src="ruong-bac-thang-sapa.jpg" alt="Ruộng bậc thang Sa Pa">
+    <figcaption>Ruộng bậc thang Sa Pa</figcaption>
+  </figure>
+  <figure>
+    <img src="fansipan-noc-nha-dong-duong.jpg" alt="Fansipan - nóc nhà Đông Dương">
+    <figcaption>Fansipan - nóc nhà Đông Dương</figcaption>
+  </figure>
+  <figure>
+    <img src="ban-lang-nguoi-hmong.jpg" alt="Bản làng người H'Mông">
+    <figcaption>Bản làng người H'Mông</figcaption>
+  </figure>
+  <figure>
+    <img src="cho-sapa.jpg" alt="Chợ Sa Pa">
+    <figcaption>Chợ Sa Pa</figcaption>
+  </figure>
+  <figure>
+    <img src="nha-tho-da-sapa.jpg" alt="Nhà thờ đá Sa Pa">
+    <figcaption>Nhà thờ đá Sa Pa</figcaption>
+  </figure>
+</div>
+
+
+      <h3>Đặc điểm nổi bật</h3>
+      <ul>
+        <li>Khí hậu mát mẻ quanh năm, có tuyết vào mùa đông</li>
+        <li>Fansipan - đỉnh núi cao nhất Việt Nam (3.143m)</li>
+        <li>Ruộng bậc thang kỳ vĩ - một trong những kỳ quan nông nghiệp thế giới</li>
+        <li>Văn hóa dân tộc thiểu số đa dạng, phong phú</li>
+        <li>Ẩm thực độc đáo: thắng cố, lẩu cá hồi, thịt trâu gác bếp</li>
+        <li>Lễ hội mùa xuân với chợ tình Sa Pa đặc sắc</li>
+      </ul>
+
+      <h3>Gợi ý lịch trình</h3>
+      <p>
+        <strong>Ngày 1:</strong> Tham quan nhà thờ đá Sa Pa, quảng trường trung tâm, dạo chợ đêm<br>
+        <strong>Ngày 2:</strong> Leo Fansipan bằng cáp treo, khám phá bản Cát Cát, thưởng thức ẩm thực địa phương<br>
+        <strong>Ngày 3:</strong> Tham quan thung lũng Mường Hoa, bản Tả Phìn, check-in ruộng bậc thang
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - VIVU VIỆT NAM</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

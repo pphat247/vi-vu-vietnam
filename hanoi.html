@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hà Nội | VIVU VIỆT NAM</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      text-align: justify;
+    }
+    .destination p,
+    .destination ul,
+    .destination h3 {
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <button class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i> MENU</button>
+    <h1>VIVU VIỆT NAM</h1>
+    <p>Cổng thông tin & hỗ trợ du lịch Việt Nam toàn diện</p>
+    <div class="search-bar">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" id="searchInput" placeholder="Tìm địa điểm..." onkeyup="searchDestinations()" />
+    </div>
+  </header>
+
+  <nav id="mainMenu">
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home"></i> Trang chủ</a></li>
+      <li><a href="khampha.html"><i class="fas fa-map-marked-alt"></i> Khám phá</a></li>
+      <li><a href="lichtrinh.html"><i class="fas fa-route"></i> Lên lịch trình</a></li>
+      <li><a href="chiase.html"><i class="fas fa-comment-dots"></i> Chia sẻ</a></li>
+      <li><a href="lehoi.html"><i class="fas fa-calendar-alt"></i> Lễ hội</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="destination">
+      <h2>Hà Nội - Trái tim của Việt Nam</h2>
+      <img src="hanoi.jpg" alt="Hà Nội">
+      <p>
+        Hà Nội là thủ đô ngàn năm văn hiến của Việt Nam, nơi kết hợp giữa nét cổ kính và hiện đại. Với những phố cổ, hồ nước thơ mộng và di tích lịch sử phong phú, Hà Nội là điểm đến lý tưởng cho du khách yêu văn hóa và khám phá bản sắc dân tộc.
+      </p>
+      <p>
+        Những con phố nhỏ quanh Hồ Gươm, chợ Đồng Xuân, Văn Miếu - Quốc Tử Giám hay Lăng Chủ tịch Hồ Chí Minh là những địa danh không thể bỏ qua khi đến với Hà Nội.
+      </p>
+
+      <h3>Bối cảnh lịch sử</h3>
+      <p>
+        Hà Nội từng là kinh đô của nhiều triều đại phong kiến và là nơi ghi dấu nhiều sự kiện lịch sử quan trọng. Trải qua bao thăng trầm, Hà Nội vẫn lưu giữ được bản sắc văn hóa độc đáo qua kiến trúc Pháp cổ, đình chùa và ẩm thực truyền thống.
+      </p>
+
+      <div class="gallery">
+        <figure><img src="ho-guom.jpg" alt="Hồ Gươm"><figcaption>Hồ Gươm</figcaption></figure>
+        <figure><img src="van-mieu.jpeg" alt="Văn Miếu"><figcaption>Văn Miếu - Quốc Tử Giám</figcaption></figure>
+        <figure><img src="pho-co-ha-noi.jpg" alt="Phố cổ Hà Nội"><figcaption>Phố cổ Hà Nội</figcaption></figure>
+        <figure><img src="lang-bac.jpg" alt="Lăng Bác"><figcaption>Lăng Chủ tịch Hồ Chí Minh</figcaption></figure>
+        <figure><img src="am-thuc-ha-noi.jpg" alt="Ẩm thực Hà Nội"><figcaption>Ẩm thực Hà Nội</figcaption></figure>
+      </div>
+
+      <h3>Đặc điểm nổi bật</h3>
+      <ul>
+        <li>Phố cổ với 36 phố phường đặc trưng</li>
+        <li>Di tích lịch sử, văn hóa phong phú</li>
+        <li>Ẩm thực tinh tế: phở, bún chả, bún thang</li>
+        <li>Không gian nghệ thuật truyền thống và đương đại</li>
+        <li>Lễ hội đặc sắc quanh năm</li>
+      </ul>
+
+      <h3>Gợi ý lịch trình</h3>
+      <p>
+        <strong>Ngày 1:</strong> Hồ Gươm – Đền Ngọc Sơn – Phố cổ<br>
+        <strong>Ngày 2:</strong> Văn Miếu – Lăng Bác – Bảo tàng Dân tộc học<br>
+        <strong>Ngày 3:</strong> Làng gốm Bát Tràng – ăn đặc sản – xem múa rối nước
+      </p>
+    </div>
+  </main>
+
+  <footer><p>&copy; 2025 - VIVU VIỆT NAM</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

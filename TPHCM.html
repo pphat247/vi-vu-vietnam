@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP. Hồ Chí Minh | VIVU VIỆT NAM</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      text-align: justify;
+    }
+    .destination p,
+    .destination ul,
+    .destination h3 {
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <button class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i> MENU</button>
+    <h1>VIVU VIỆT NAM</h1>
+    <p>Cổng thông tin & hỗ trợ du lịch Việt Nam toàn diện</p>
+    <div class="search-bar">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" id="searchInput" placeholder="Tìm địa điểm..." onkeyup="searchDestinations()" />
+    </div>
+  </header>
+
+  <nav id="mainMenu">
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home"></i> Trang chủ</a></li>
+      <li><a href="khampha.html"><i class="fas fa-map-marked-alt"></i> Khám phá</a></li>
+      <li><a href="lichtrinh.html"><i class="fas fa-route"></i> Lên lịch trình</a></li>
+      <li><a href="chiase.html"><i class="fas fa-comment-dots"></i> Chia sẻ</a></li>
+      <li><a href="lehoi.html"><i class="fas fa-calendar-alt"></i> Lễ hội</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="destination">
+      <h2>TP. Hồ Chí Minh - Trung tâm kinh tế và văn hóa miền Nam</h2>
+      <img src="tphcm.jpg" alt="TP. Hồ Chí Minh">
+      <p>
+        TP. Hồ Chí Minh là thành phố lớn nhất Việt Nam, nổi bật với nhịp sống sôi động, sự giao thoa văn hóa và nền kinh tế phát triển mạnh mẽ. Đây là trung tâm thương mại, tài chính, giải trí của cả nước với nhiều công trình kiến trúc đặc sắc, di tích lịch sử và khu phố nhộn nhịp.
+      </p>
+      <p>
+        Từ Dinh Độc Lập, Nhà thờ Đức Bà đến chợ Bến Thành và phố đi bộ Nguyễn Huệ, TP. HCM mang đến cho du khách sự kết hợp độc đáo giữa truyền thống và hiện đại.
+      </p>
+
+      <h3>Bối cảnh lịch sử</h3>
+      <p>
+        Thành phố được người Pháp gọi là Sài Gòn và là thủ phủ của Đông Dương trước năm 1945. Sau năm 1975, Sài Gòn được đổi tên thành TP. Hồ Chí Minh. Di tích lịch sử tại đây mang đậm dấu ấn thời kỳ kháng chiến và thời thuộc địa.
+      </p>
+
+      <div class="gallery">
+        <figure><img src="nha-tho-duc-ba.jpg" alt="Nhà thờ Đức Bà"><figcaption>Nhà thờ Đức Bà</figcaption></figure>
+        <figure><img src="cho-ben-thanh.jpg" alt="Chợ Bến Thành"><figcaption>Chợ Bến Thành</figcaption></figure>
+        <figure><img src="pho-nguyen-hue.jpg" alt="Phố đi bộ Nguyễn Huệ"><figcaption>Phố đi bộ Nguyễn Huệ</figcaption></figure>
+        <figure><img src="dinh-doc-lap.jpg" alt="Dinh Độc Lập"><figcaption>Dinh Độc Lập</figcaption></figure>
+        <figure><img src="am-thuc-sai-gon.jpg" alt="Ẩm thực Sài Gòn"><figcaption>Ẩm thực Sài Gòn</figcaption></figure>
+      </div>
+
+      <h3>Đặc điểm nổi bật</h3>
+      <ul>
+        <li>Các công trình kiến trúc Pháp độc đáo</li>
+        <li>Địa điểm du lịch thành thị năng động</li>
+        <li>Ẩm thực đường phố phong phú, đa dạng</li>
+        <li>Cuộc sống về đêm sôi động</li>
+        <li>Lễ hội và sự kiện văn hóa quanh năm</li>
+      </ul>
+
+      <h3>Gợi ý lịch trình</h3>
+      <p>
+        <strong>Ngày 1:</strong> Dinh Độc Lập – Nhà thờ Đức Bà – Bưu điện Thành phố<br>
+        <strong>Ngày 2:</strong> Chợ Bến Thành – Phố đi bộ Nguyễn Huệ – Landmark 81<br>
+        <strong>Ngày 3:</strong> Khu Chinatown – bảo tàng lịch sử – thưởng thức ẩm thực đường phố
+      </p>
+    </div>
+  </main>
+
+  <footer><p>&copy; 2025 - VIVU VIỆT NAM</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

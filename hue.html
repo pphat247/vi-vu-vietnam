@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Huế - Thừa Thiên Huế | VIVU VIỆT NAM</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      text-align: justify;
+    }
+    .destination p,
+    .destination ul,
+    .destination h3 {
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <button class="menu-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i> MENU
+    </button>
+    <h1>VIVU VIỆT NAM</h1>
+    <p>Cổng thông tin & hỗ trợ du lịch Việt Nam toàn diện</p>
+    <div class="search-bar">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" id="searchInput" placeholder="Tìm địa điểm..." onkeyup="searchDestinations()" />
+    </div>
+  </header>
+
+  <nav id="mainMenu">
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home"></i> Trang chủ</a></li>
+      <li><a href="khampha.html"><i class="fas fa-map-marked-alt"></i> Khám phá</a></li>
+      <li><a href="lichtrinh.html"><i class="fas fa-route"></i> Lên lịch trình</a></li>
+      <li><a href="chiase.html"><i class="fas fa-comment-dots"></i> Chia sẻ</a></li>
+      <li><a href="lehoi.html"><i class="fas fa-calendar-alt"></i> Lễ hội</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="destination">
+      <h2>Huế - Thừa Thiên Huế</h2>
+      <img src="hue-thua thien hue.jpg" alt="Thành phố Huế">
+      <p>
+        Huế là cố đô của Việt Nam, nổi bật với vẻ đẹp cổ kính, trầm mặc và thơ mộng. Đây là nơi hội tụ tinh hoa văn hóa cung đình, những di sản lịch sử, kiến trúc và ẩm thực đặc sắc.
+      </p>
+      <p>
+        Nằm bên dòng sông Hương êm đềm, Huế thu hút du khách với Hoàng thành Huế, các lăng tẩm vua Nguyễn, chùa Thiên Mụ, cùng với những lễ hội truyền thống và âm nhạc cung đình nhã nhạc – được UNESCO công nhận là Di sản Văn hóa Phi vật thể.
+      </p>
+
+      <h3>Bối cảnh lịch sử</h3>
+      <p>
+        Huế từng là kinh đô của triều Nguyễn – triều đại phong kiến cuối cùng của Việt Nam – từ năm 1802 đến 1945. Dưới thời Nguyễn, Huế phát triển mạnh mẽ về văn hóa, kiến trúc và hành chính. Nhiều công trình lớn như Kinh thành Huế, Lăng Gia Long, Minh Mạng, Khải Định... được xây dựng và tồn tại đến nay như những minh chứng cho thời kỳ hoàng kim này.
+      </p>
+
+      <div class="gallery">
+  <figure>
+    <img src="Dai-Noi-Hue.jpg" alt="Đại Nội Huế">
+    <figcaption>Đại Nội Huế</figcaption>
+  </figure>
+  <figure>
+    <img src="chua-thien-mu.jpg" alt="Chùa Thiên Mụ">
+    <figcaption>Chùa Thiên Mụ</figcaption>
+  </figure>
+  <figure>
+    <img src="lang-khai-dinh.jpg" alt="Lăng Khải Định">
+    <figcaption>Lăng Khải Định</figcaption>
+  </figure>
+  <figure>
+    <img src="song-huong.jpg" alt="Sông Hương - Cầu Tràng Tiền">
+    <figcaption>Sông Hương - Cầu Tràng Tiền</figcaption>
+  </figure>
+  <figure>
+    <img src="am-thuc-hue.jpg" alt="Ẩm thực Huế">
+    <figcaption>Ẩm thực Huế</figcaption>
+  </figure>
+</div>
+
+
+      <h3>Đặc điểm nổi bật</h3>
+      <ul>
+        <li>Đại Nội Huế – quần thể di tích lịch sử được UNESCO công nhận</li>
+        <li>Sông Hương – biểu tượng thơ mộng của Huế</li>
+        <li>Chùa Thiên Mụ cổ kính trên đồi Hà Khê</li>
+        <li>Ẩm thực đa dạng: bún bò Huế, bánh bèo, bánh khoái, chè Huế</li>
+        <li>Lễ hội Festival Huế đặc sắc 2 năm/lần</li>
+        <li>Không khí yên tĩnh, phong cách sống chậm, nhẹ nhàng</li>
+      </ul>
+
+      <h3>Gợi ý lịch trình</h3>
+      <p>
+        <strong>Ngày 1:</strong> Tham quan Đại Nội Huế, Chùa Thiên Mụ, cầu Trường Tiền<br>
+        <strong>Ngày 2:</strong> Ghé thăm lăng Khải Định, Minh Mạng, dạo thuyền trên sông Hương buổi tối<br>
+        <strong>Ngày 3:</strong> Thưởng thức ẩm thực cung đình, tham quan làng hương Thủy Xuân, chợ Đông Ba
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - VIVU VIỆT NAM</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
