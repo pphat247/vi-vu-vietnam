@@ -45,7 +45,6 @@ ViVuVietNam/
 
 ## 👨‍💻 Thành viên nhóm
 
-- Dương Thiện Hùng
-- Lữ Trung Anh
-- Phạm Gia Bách
-- Phùng Thị Hạ Lam
+- Nguyễn Thành Phát
+- Nguyễn Đình Nghĩa
+
